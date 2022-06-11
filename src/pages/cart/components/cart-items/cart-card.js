@@ -1,9 +1,49 @@
 import { Pane, Button, Image, TextInput, IconButton, PlusIcon, MinusIcon } from 'evergreen-ui';
 import { useState } from 'react';
-import { MetaContainer, StyledInput } from './card.component.styles';
+import styled from 'styled-components';
 
-export const Card = () => {
+export const MetaContainer = styled(Pane)`
+  .best-seller {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ee9c00;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3e4152;
+    margin-top: 1rem;
+  }
+  .price {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #3e4152;
+    margin-top: 1rem;
+  }
+  .description {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgba(40, 44, 63, 0.45);
+    font-weight: 500;
+    margin-top: 1rem;
+    width: 40rem;
+  }
+`;
+
+export const StyledInput = styled.input`
+  width: 40px;
+  border: 1px solid rgba(40, 44, 63, 0.45);
+  color: rgba(40, 44, 63, 0.45);
+  height: 32px;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+`;
+
+export const CartCard = () => {
   const [count, setCount] = useState(0);
+  console.log('count', count);
   return (
     <Pane display={'flex'} background={'white'} padding={'2rem'} borderColor={'rgb(150 170 180 / 50%)'}>
       <MetaContainer>
@@ -16,9 +56,7 @@ export const Card = () => {
         <p className='description'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, provident?
         </p>
-        <Button appearance='primary' intent='success' marginTop={'1rem'}>
-          Add To Cart
-        </Button>
+        <Button marginTop={'2rem'}>Remove</Button>
       </MetaContainer>
       <Pane>
         <Image
@@ -29,7 +67,7 @@ export const Card = () => {
           height={'12.0rem'}
           borderRadius={'5px'}
         />
-        {/* <Pane display='flex' alignItems={'center'} justifyContent={'center'} gap={'0.8rem'} marginTop={'1rem'}>
+        <Pane display='flex' alignItems={'center'} justifyContent={'center'} gap={'0.8rem'} marginTop={'1rem'}>
           <IconButton color={'green'} intent='success' icon={PlusIcon} />
           <StyledInput
             className='count'
@@ -41,7 +79,7 @@ export const Card = () => {
             color={'grey'}
           />
           <IconButton intent='danger' icon={MinusIcon} />
-        </Pane> */}
+        </Pane>
       </Pane>
     </Pane>
   );

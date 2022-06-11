@@ -29,3 +29,12 @@ export const MetaContainer = styled(Pane)`
     width: 40rem;
   }
 `;
+export const StyledInput = styled.input`
+  width: 40px;
+  border: 1px solid rgba(40, 44, 63, 0.45);
+  color: rgba(40, 44, 63, 0.45);
+  height: 32px;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+`;
