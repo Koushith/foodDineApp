@@ -6,3 +6,5 @@ export * from './item/item-details.screen';
 export * from './restaurant/dashboard/dashboard.screen';
 export * from './restaurant/order-details/order-details.screen';
 export * from './profile/profile.screen';
+export * from './item/add-item.screen';
+export * from './menu-list/menu-list.screen';

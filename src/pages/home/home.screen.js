@@ -1,3 +1,9 @@
+import { Card } from '../../components';
+
 export const HomeScreen = () => {
-  return <>home screen</>;
+  return (
+    <>
+      <Card />
+    </>
+  );
 };
