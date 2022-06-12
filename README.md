@@ -34,5 +34,8 @@ $ npm run dev
 ![image](https://user-images.githubusercontent.com/30016242/173219057-0220e855-9d76-41a6-842e-5309aa313a44.png)
 ![image](https://user-images.githubusercontent.com/30016242/173219290-c42842d5-bc27-4146-a981-cf6520ec0b39.png)
 ![image](https://user-images.githubusercontent.com/30016242/173219304-c9fffec2-d098-4bf5-925c-a336559128a6.png)
+![image](https://user-images.githubusercontent.com/30016242/173219467-c0f5da5c-8485-48d9-8235-a4f4a40ec258.png)
+![image](https://user-images.githubusercontent.com/30016242/173219478-ce0c68ae-7a6f-4405-8c28-378e52606753.png)
+
 
 
