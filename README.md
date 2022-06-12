@@ -23,11 +23,9 @@ $ npm run dev
 - order summary
 - Single order details
 
-### Built with -
-- React JS
-- React Context API
-- React Router v6
-- Evergreen UI CSS Framework
+### Built using MERN Stack
+
+
 
 ### Screens
 
