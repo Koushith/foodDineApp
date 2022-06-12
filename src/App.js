@@ -11,6 +11,7 @@ import {
   ItemDetails,
   AddItemScreen,
   MenuListScreen,
+  OrderDetailsScreen,
 } from './pages';
 
 import { GlobalStyle } from './utils';
@@ -26,7 +27,8 @@ export const App = () => {
             <Route path='/profile' element={<ProfileScreen />} />
             <Route path='/cart' element={<CartScreen />} />
             {/* single item */}
-            <Route path='/item/:id' element={<ItemDetails />} />
+            {/* <Route path='/item/:id' element={<ItemDetails />} /> */}
+            <Route path='/order/:id' element={<OrderDetailsScreen />} />
             <Route path='/menu' element={<MenuListScreen />} />
             <Route path='/add-item' element={<AddItemScreen />} />
           </Route>
